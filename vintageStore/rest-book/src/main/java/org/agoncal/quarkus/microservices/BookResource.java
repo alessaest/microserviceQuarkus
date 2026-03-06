@@ -51,7 +51,7 @@ public class BookResource {
     public Response fallbackOnCreatingABook(@FormParam("title") String title, @FormParam("author") String author, @FormParam("year") int yearOfPublication, @FormParam("genre") String genre) throws FileNotFoundException {
 
         Book book = new Book();
-        book.isbn13 = "Will be set later";
+        book.isbn13 = "Will set later, please wait...";
         book.title = title;
         book.author = author;
         book.yearOfPublication = yearOfPublication;
